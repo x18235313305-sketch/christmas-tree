@@ -29,11 +29,17 @@
       /* Webcam */
       #webcam-wrapper { position: absolute; bottom: 40px; right: 40px; width: 120px; height: 90px; border: 1px solid rgba(255, 255, 255, 0.1); overflow: hidden; opacity: 0; pointer-events: none; }
 
-      /* Mobile tweaks: center text and reduce size to avoid forced wrap */
+      /* Mobile tweaks: keep overlay compact and off the tree top */
       @media (max-width: 768px) {
-        #ui-layer { padding-top: 24px; }
-        h1 { font-size: 38px; letter-spacing: 3px; line-height: 1.1; }
-        .upload-wrapper { margin-top: 14px; }
+        #ui-layer {
+          justify-content: flex-start;
+          padding-top: calc(10px + env(safe-area-inset-top, 0px));
+          gap: 6px;
+        }
+        h1 { font-size: 32px; letter-spacing: 2px; line-height: 1.05; }
+        .upload-wrapper { margin-top: 6px; }
+        .upload-btn { padding: 8px 18px; font-size: 9px; letter-spacing: 2px; }
+        .hint-text { font-size: 8px; }
       }
     </style>
     <style> @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"); </style>
