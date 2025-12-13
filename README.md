@@ -1,5 +1,7 @@
 # 🎄 3D Interactive Particle Christmas Tree
 
+> 基于 [echoezy9527/christmas-tree-generated-by-gemini-3](https://github.com/echoezy9527/christmas-tree-generated-by-gemini-3) 项目进行改造，新增和优化相关功能
+
 本项目是一个基于 **Three.js** 和 **MediaPipe** 构建的沉浸式 Web 3D 应用。它融合了电影级的视觉效果与前沿的计算机视觉技术，允许用户通过简单的手势，在“璀璨圣诞树”与“漫天星河”之间自由切换，并与悬浮的照片墙进行交互。
 
 代码经过深度优化，**完美适配移动端与桌面端**，并提供了一套完整的可视化工具栏。
